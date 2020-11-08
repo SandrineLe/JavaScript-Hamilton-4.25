@@ -90,5 +90,7 @@
     ];
 
     // your code here
+    console.log(people.reduce((total, a) => total + a.age, 0));
+
 
 })();

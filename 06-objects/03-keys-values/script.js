@@ -1,3 +1,4 @@
+
 /* becode/javascript
  *
  * /06-objects/03-keys-values/script.js - 6.3: clés & valeurs
@@ -19,4 +20,21 @@
         status: "married",
     };
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+        
+        objects = Object.getOwnPropertyNames(person);
+
+        objects.forEach((content) => {
+            console.log(content);
+        })
+
+        values = Object.values(person);
+
+        values.forEach((value) => {
+            console.log(value);
+        })
+        
+
+    })
 })();

@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    let Name = prompt("What's your name?")	;	
+    let Age = prompt("How old are you?")		;
+    let City = prompt("And where do you live?");
+    let Summary = confirm(" To sum up, your name is " + Name + ", you're " + Age + " and you live in " + City + ", right?");
 
+    if(Summary)  {
+        alert("OK! Thank you for your time");
+    } else {
+        window.location.reload();
+    }
+    
 })();

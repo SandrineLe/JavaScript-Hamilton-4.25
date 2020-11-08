@@ -15,4 +15,15 @@
 
     // your code here
 
+    var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 18) {
+  console.log(document.getElementById("target").innerHTML = 'Hello!!')
+}  else {
+  console.log(document.getElementById("target").innerHTML = 'Good evening!!')
+}
+
+
+
 })();

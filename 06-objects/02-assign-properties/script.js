@@ -27,4 +27,25 @@
         user: null,
     };
     // your code here
+
+
+    document.getElementById("run").addEventListener("click", function(){
+       
+        computers.forEach((items) => {
+
+            if(items.hasOwnProperty('available') == false){
+                items = Object.defineProperty(items, 'availabe', {value: true});
+            }
+            if(items.hasOwnProperty('os') == false){
+                items = Object.defineProperty(items, 'os', {value: 'linux'});
+            }
+            if(items.hasOwnProperty('user') == false){
+                items = Object.defineProperty(items, 'user', {value: null});
+            }
+            
+            
+        })
+        console.log(computers)
+    })
+
 })();

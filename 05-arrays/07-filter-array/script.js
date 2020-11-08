@@ -90,5 +90,15 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        people.forEach(gens => {
+            if (gens["age"] >=18) {
+                console.log(gens["firstname"]);
+            }
+        })
+
+
+});
+
 
 })();

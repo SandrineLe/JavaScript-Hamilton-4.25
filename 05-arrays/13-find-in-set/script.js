@@ -23,4 +23,12 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+    let alex = people.has("Alexandre");
+    console.log(alex);
+
+    let len = people.size; 
+    console.log(len); 
+
+});
 })();

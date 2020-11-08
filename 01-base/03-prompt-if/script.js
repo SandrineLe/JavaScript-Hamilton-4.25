@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function Cake() {
 
   // your code here
+  let Cake = prompt("Do you want some cake?");
+  if (Cake === "yes" || Cake === "Yes" || Cake === "YES") {
+    alert("Yeaaaah! Congrats! Here's some cake!")
+}
+
+else {
+    alert("Well, more cake for me then!")
+}
 
 })();

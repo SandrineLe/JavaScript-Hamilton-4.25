@@ -29,5 +29,14 @@
     ];
 
     // your code here
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+      }
+      
+      // usage example:
+      var a = ['cerise', 'durian', 'pomme', 'fraise', 'tomate', 'orange', 'mandarine', 'pêche', 'raisin'];
+      var unique = a.filter(onlyUnique);
+      
+      console.log(unique);
 
 })();
