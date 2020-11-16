@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    const asyncCall = async (promiseFunction) => {
+        const promise = await promiseFunction();
+        try {
+            console.log(promise);
+        } catch(e) {
+            console.error(e);
+        }
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        
+        asyncCall(window.lib.getPosts);
+
+    });
 })();
